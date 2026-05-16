@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Usirikayala Haneesh — Cyber Security Student, B.Tech CSE at MITS Madanapalle. Java, Python, SQL, Linux."/>
+  <title>Usirikayala Haneesh — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NOISE LAYER -->
+<div class="noise" aria-hidden="true"></div>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="cursor-trail" id="cursorTrail" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-left">
+    <a href="#hero" class="nav-logo">UH<span>.</span></a>
+  </div>
+  <nav class="nav-center" aria-label="Main navigation">
+    <a href="#about"   class="nav-lnk" data-sec="about">About</a>
+    <a href="#education" class="nav-lnk" data-sec="education">Education</a>
+    <a href="#skills"  class="nav-lnk" data-sec="skills">Skills</a>
+    <a href="#certs"   class="nav-lnk" data-sec="certs">Certifications</a>
+    <a href="#activity" class="nav-lnk" data-sec="activity">Activities</a>
+    <a href="#contact" class="nav-lnk" data-sec="contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <a href="haneesh resume.pdf" download class="nav-resume">Resume ↓</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <a href="#about"    class="mn-lnk">About</a>
+  <a href="#education" class="mn-lnk">Education</a>
+  <a href="#skills"   class="mn-lnk">Skills</a>
+  <a href="#certs"    class="mn-lnk">Certifications</a>
+  <a href="#activity" class="mn-lnk">Activities</a>
+  <a href="#contact"  class="mn-lnk">Contact</a>
+</div>
+
+<main>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="hero" class="s-hero">
+  <!-- Ambient background circles -->
+  <div class="hero-orb orb-1" aria-hidden="true"></div>
+  <div class="hero-orb orb-2" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-line"></span>
+      <span class="eyebrow-txt">B.Tech · Cyber Security · MITS Madanapalle</span>
+    </div>
+
+    <h1 class="hero-name">
+      <span class="hn-first reveal-char">Usirikayala</span>
+      <span class="hn-last reveal-char">Haneesh</span>
+    </h1>
+
+    <div class="hero-role-row">
+      <span class="hrr-line"></span>
+      <span class="hrr-label" id="typeTarget"></span>
+      <span class="hrr-cursor">|</span>
+      <span class="hrr-line"></span>
+    </div>
+
+    <p class="hero-tagline reveal-fade">
+      Securing the digital world, one line of code at a time.
+    </p>
+
+    <div class="hero-actions reveal-fade">
+      <a href="#about" class="btn-gold">Explore Profile</a>
+      <a href="haneesh resume.pdf" download class="btn-ghost">Download resume</a>
+    </div>
+
+    <!-- Social links row -->
+    <div class="hero-social reveal-fade">
+      <a href="https://www.linkedin.com/in/usirikayalahaneesh-1a588332b" target="_blank" rel="noopener" aria-label="LinkedIn" class="soc-lnk">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:uhaneesh03@gmail.com" aria-label="Email" class="soc-lnk">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="soc-lnk">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/_honey_usirikayala_?igsh=MXVoaW56aGxkdG1tOQ==" target="_blank" rel="noopener" aria-label="Instagram" class="soc-lnk">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="tel:7702608199" aria-label="Phone" class="soc-lnk">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO PHOTO -->
+  <div class="hero-photo-wrap reveal-fade">
+    <div class="hero-photo-frame">
+      <img src="photo.jpeg" alt="Usirikayala Haneesh"
+        onerror="this.parentElement.classList.add('no-photo');this.style.display='none'"/>
+      <div class="photo-fallback"><i class="fa-solid fa-user-shield"></i></div>
+    </div>
+    <div class="hero-stat-cards">
+      <div class="hsc">
+        <span class="hsc-val" data-count="883" data-div="100">0</span>
+        <span class="hsc-lbl">CGPA</span>
+      </div>
+      <div class="hsc">
+        <span class="hsc-val" data-count="4">0</span>
+        <span class="hsc-lbl">Certifications</span>
+      </div>
+      <div class="hsc">
+        <span class="hsc-val" data-count="4">0</span>
+        <span class="hsc-lbl">Activities</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll cue -->
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hs-inner">
+      <span class="hs-text">Scroll</span>
+      <div class="hs-arrow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ MARQUEE STRIP ═══════ -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="ms-track">
+    <span>Cyber Security</span><span class="ms-dot">✦</span>
+    <span>Java Programming</span><span class="ms-dot">✦</span>
+    <span>Python</span><span class="ms-dot">✦</span>
+    <span>SQL</span><span class="ms-dot">✦</span>
+    <span>Linux</span><span class="ms-dot">✦</span>
+    <span>Network Security</span><span class="ms-dot">✦</span>
+    <span>Cisco Packet Tracer</span><span class="ms-dot">✦</span>
+    <span>MS Office Suite</span><span class="ms-dot">✦</span>
+    <span>Problem Solving</span><span class="ms-dot">✦</span>
+    <!-- duplicate for seamless -->
+    <span>Cyber Security</span><span class="ms-dot">✦</span>
+    <span>Java Programming</span><span class="ms-dot">✦</span>
+    <span>Python</span><span class="ms-dot">✦</span>
+    <span>SQL</span><span class="ms-dot">✦</span>
+    <span>Linux</span><span class="ms-dot">✦</span>
+    <span>Network Security</span><span class="ms-dot">✦</span>
+    <span>Cisco Packet Tracer</span><span class="ms-dot">✦</span>
+    <span>MS Office Suite</span><span class="ms-dot">✦</span>
+    <span>Problem Solving</span><span class="ms-dot">✦</span>
+  </div>
+</div>
+
+<!-- ═══════ ABOUT ═══════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="sec-label ci"> About</div>
+    <div class="about-grid">
+      <!-- Left big text -->
+      <div class="about-left ci">
+        <h2 class="about-heading">
+          Passionate about<br>
+          <em>securing</em> the<br>
+          digital frontier.
+        </h2>
+        <div class="about-langs">
+          <span class="al-item"><i class="fa-solid fa-circle-check"></i> English</span>
+          <span class="al-item"><i class="fa-solid fa-circle-check"></i> Telugu</span>
+          <span class="al-item"><i class="fa-solid fa-circle-check"></i> Hindi</span>
+        </div>
+        <div class="about-interests">
+          <span class="ai-pill"><i class="fa-solid fa-film"></i> Anime</span>
+          <span class="ai-pill"><i class="fa-solid fa-video"></i> Editing</span>
+        </div>
+      </div>
+
+      <!-- Right bio + info -->
+      <div class="about-right">
+        <div class="about-bio ci">
+          <p>I'm <strong>Usirikayala Haneesh</strong>, a first-year B.Tech Computer Science Engineering student specialising in <strong>Cyber Security</strong> at Madanapalle Institute of Technology &amp; Science, with a CGPA of <strong>8.83</strong>.</p>
+          <p>I'm driven by a security-first mindset — understanding how systems are built, how they can be compromised, and how to protect them. I actively pursue certifications, workshops, and hands-on technical challenges to sharpen my edge.</p>
+          <p>A strong communicator and team player, I've organised hackathons and national-level symposiums, and participated in focused Cyber Security workshops and training programs.</p>
+        </div>
+
+        <!-- Info card -->
+        <div class="info-card ci">
+          <div class="ic-row"><span class="ic-k">Full Name</span><span class="ic-v">Usirikayala Haneesh</span></div>
+          <div class="ic-row"><span class="ic-k">Degree</span><span class="ic-v">B.Tech CSE (Cyber Security)</span></div>
+          <div class="ic-row"><span class="ic-k">Institute</span><span class="ic-v">MITS, Madanapalle</span></div>
+          <div class="ic-row"><span class="ic-k">CGPA</span><span class="ic-v ic-gold">8.83 / 10</span></div>
+          <div class="ic-row"><span class="ic-k">Location</span><span class="ic-v">Madanapalle, AP</span></div>
+          <div class="ic-row"><span class="ic-k">Email</span><span class="ic-v"><a href="mailto:uhaneesh03@gmail.com">uhaneesh03@gmail.com</a></span></div>
+          <div class="ic-row"><span class="ic-k">Phone</span><span class="ic-v"><a href="tel:7702608199">+91 7702608199</a></span></div>
+          <div class="ic-row"><span class="ic-k">Status</span><span class="ic-v ic-green">Open to Internships</span></div>
+        </div>
+
+        <!-- Social links -->
+        <div class="about-social ci">
+          <a href="https://www.linkedin.com/in/usirikayalahaneesh-1a588332b" target="_blank" rel="noopener" class="as-btn"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a>
+          <a href="mailto:uhaneesh03@gmail.com" class="as-btn"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="as-btn"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+          <a href="https://www.instagram.com/_honey_usirikayala_?igsh=MXVoaW56aGxkdG1tOQ==" target="_blank" rel="noopener" class="as-btn"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ EDUCATION ═══════ -->
+<section id="education" class="section s-dark">
+  <div class="container">
+    <div class="sec-label ci"> Education</div>
+    <h2 class="sec-title ci">Academic <em>Journey</em></h2>
+
+    <div class="edu-list">
+
+      <div class="edu-item ci">
+        <div class="ei-left">
+          <div class="ei-year">2024 — 2028</div>
+          <div class="ei-badge">Current</div>
+        </div>
+        <div class="ei-divider" aria-hidden="true"></div>
+        <div class="ei-right">
+          <h3 class="ei-degree">B.Tech · Computer Science Engineering</h3>
+          <p class="ei-spec">Specialization — Cyber Security</p>
+          <p class="ei-inst"><i class="fa-solid fa-building-columns"></i> Madanapalle Institute of Technology &amp; Science</p>
+          <div class="ei-bar-row">
+            <div class="ei-bar-track"><div class="ei-bar-fill" data-w="88"></div></div>
+            <span class="ei-score">CGPA 8.83</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item ci">
+        <div class="ei-left">
+          <div class="ei-year">2022 — 2024</div>
+        </div>
+        <div class="ei-divider" aria-hidden="true"></div>
+        <div class="ei-right">
+          <h3 class="ei-degree">Intermediate · MPC</h3>
+          <p class="ei-inst"><i class="fa-solid fa-building-columns"></i> Siddhartha Junior College, Madanapalle</p>
+          <div class="ei-bar-row">
+            <div class="ei-bar-track"><div class="ei-bar-fill" data-w="92"></div></div>
+            <span class="ei-score">92%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item ci">
+        <div class="ei-left">
+          <div class="ei-year">2019 — 2020</div>
+        </div>
+        <div class="ei-divider" aria-hidden="true"></div>
+        <div class="ei-right">
+          <h3 class="ei-degree">SSC · 10th Grade</h3>
+          <p class="ei-inst"><i class="fa-solid fa-school"></i> Z.P. High School, T.Sundupalle</p>
+          <div class="ei-bar-row">
+            <div class="ei-bar-track"><div class="ei-bar-fill" data-w="83"></div></div>
+            <span class="ei-score">83%</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SKILLS ═══════ -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="sec-label ci"> Skills</div>
+    <h2 class="sec-title ci">Technical <em>Arsenal</em></h2>
+
+    <div class="skills-wrapper">
+
+      <!-- Programming -->
+      <div class="skill-block ci">
+        <div class="sb-head">
+          <i class="fa-solid fa-code"></i>
+          <span>Programming Languages</span>
+        </div>
+        <div class="sb-items">
+          <div class="sb-row">
+            <span class="sbr-name"><i class="fa-brands fa-java"></i> Java</span>
+            <div class="sbr-track"><div class="sbr-fill" data-w="78"></div></div>
+            <span class="sbr-pct">78%</span>
+          </div>
+          <div class="sb-row">
+            <span class="sbr-name"><i class="fa-brands fa-python"></i> Python</span>
+            <div class="sbr-track"><div class="sbr-fill" data-w="70"></div></div>
+            <span class="sbr-pct">70%</span>
+          </div>
+          <div class="sb-row">
+            <span class="sbr-name"><i class="fa-solid fa-database"></i> SQL</span>
+            <div class="sbr-track"><div class="sbr-fill" data-w="75"></div></div>
+            <span class="sbr-pct">75%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- OS -->
+      <div class="skill-block ci">
+        <div class="sb-head">
+          <i class="fa-solid fa-server"></i>
+          <span>Operating Systems</span>
+        </div>
+        <div class="sb-items">
+          <div class="sb-row">
+            <span class="sbr-name"><i class="fa-brands fa-windows"></i> Windows</span>
+            <div class="sbr-track"><div class="sbr-fill" data-w="90"></div></div>
+            <span class="sbr-pct">90%</span>
+          </div>
+          <div class="sb-row">
+            <span class="sbr-name"><i class="fa-brands fa-linux"></i> Linux</span>
+            <div class="sbr-track"><div class="sbr-fill" data-w="68"></div></div>
+            <span class="sbr-pct">68%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-block ci">
+        <div class="sb-head">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <span>Tools & Software</span>
+        </div>
+        <div class="sb-items">
+          <div class="sb-row">
+            <span class="sbr-name"><i class="fa-brands fa-microsoft"></i> MS Word</span>
+            <div class="sbr-track"><div class="sbr-fill" data-w="90"></div></div>
+            <span class="sbr-pct">90%</span>
+          </div>
+          <div class="sb-row">
+            <span class="sbr-name"><i class="fa-solid fa-file-powerpoint"></i> PowerPoint</span>
+            <div class="sbr-track"><div class="sbr-fill" data-w="88"></div></div>
+            <span class="sbr-pct">88%</span>
+          </div>
+          <div class="sb-row">
+            <span class="sbr-name"><i class="fa-solid fa-file-excel"></i> Excel</span>
+            <div class="sbr-track"><div class="sbr-fill" data-w="82"></div></div>
+            <span class="sbr-pct">82%</span>
+          </div>
+          <div class="sb-row">
+            <span class="sbr-name"><i class="fa-solid fa-network-wired"></i> Cisco PT</span>
+            <div class="sbr-track"><div class="sbr-fill" data-w="65"></div></div>
+            <span class="sbr-pct">65%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-block ci">
+        <div class="sb-head">
+          <i class="fa-solid fa-brain"></i>
+          <span>Soft Skills</span>
+        </div>
+        <div class="soft-chips">
+          <span class="sc-chip">Problem Solving</span>
+          <span class="sc-chip">Management</span>
+          <span class="sc-chip">Coordination</span>
+          <span class="sc-chip">Decision Making</span>
+          <span class="sc-chip">Communication</span>
+          <span class="sc-chip">Teamwork</span>
+          <span class="sc-chip">Leadership</span>
+          <span class="sc-chip">Adaptability</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CERTIFICATIONS ═══════ -->
+<section id="certs" class="section s-dark">
+  <div class="container">
+    <div class="sec-label ci"> Certifications</div>
+    <h2 class="sec-title ci">Credentials <em>&amp; Badges</em></h2>
+
+    <div class="cert-grid">
+
+      <article class="cert-card ci" style="--delay:.0s">
+        <div class="cc-top">
+          <span class="cc-num">01</span>
+          <div class="cc-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        </div>
+        <div class="cc-body">
+          <p class="cc-issuer">NPTEL</p>
+          <h3 class="cc-name">Employment Communication</h3>
+          <div class="cc-verified"><i class="fa-solid fa-circle-check"></i> Verified · Completed</div>
+        </div>
+        <button class="cc-btn" onclick="openCert('certs/cert1.jpg','Employment Communication — NPTEL')">
+          View Certificate <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </article>
+
+      <article class="cert-card ci" style="--delay:.1s">
+        <div class="cc-top">
+          <span class="cc-num">02</span>
+          <div class="cc-icon cc-green"><i class="fa-solid fa-chart-bar"></i></div>
+        </div>
+        <div class="cc-body">
+          <p class="cc-issuer">BOARD</p>
+          <h3 class="cc-name">Data Science for Beginners</h3>
+          <div class="cc-verified"><i class="fa-solid fa-circle-check"></i> Verified · Completed</div>
+        </div>
+        <button class="cc-btn" onclick="openCert('cert2.jpeg','Data Science for Beginners — BOARD')">
+          View Certificate <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </article>
+
+      <article class="cert-card ci" style="--delay:.2s">
+        <div class="cc-top">
+          <span class="cc-num">03</span>
+          <div class="cc-icon cc-gold"><i class="fa-solid fa-shield-halved"></i></div>
+        </div>
+        <div class="cc-body">
+          <p class="cc-issuer">Cisco</p>
+          <h3 class="cc-name">Cyber Security Essentials</h3>
+          <div class="cc-verified"><i class="fa-solid fa-circle-check"></i> Verified · Completed</div>
+        </div>
+        <button class="cc-btn" onclick="openCert('certs/cert3.jpg','Cyber Security Essentials — Cisco')">
+          View Certificate <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </article>
+
+      <article class="cert-card ci" style="--delay:.3s">
+        <div class="cc-top">
+          <span class="cc-num">04</span>
+          <div class="cc-icon cc-purple"><i class="fa-solid fa-database"></i></div>
+        </div>
+        <div class="cc-body">
+          <p class="cc-issuer">HackerRank</p>
+          <h3 class="cc-name">SQL</h3>
+          <div class="cc-verified"><i class="fa-solid fa-circle-check"></i> Verified · Completed</div>
+        </div>
+        <button class="cc-btn" onclick="openCert('certs/cert4.jpg','SQL — HackerRank')">
+          View Certificate <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ ACTIVITIES ═══════ -->
+<section id="activity" class="section">
+  <div class="container">
+    <div class="sec-label ci"> Activities &amp; Achievements</div>
+    <h2 class="sec-title ci">Beyond the <em>Classroom</em></h2>
+
+    <div class="act-grid">
+
+      <div class="act-item ci" style="--delay:.0s">
+        <div class="ai-num">01</div>
+        <div class="ai-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3 class="ai-title">Workshop Participation</h3>
+        <p class="ai-desc">Participated in college-level hackathon events .</p>
+        <button class="cc-btn" onclick="openCert('pcert1.jpeg','')">
+          View Certificate <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <span class="ai-role">Participant</span>
+      </div>
+
+      <div class="act-item ci" style="--delay:.1s">
+        <div class="ai-num">02</div>
+        <div class="ai-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+        <h3 class="ai-title">Freshers Day Celebrations</h3>
+        <p class="ai-desc">Participated in event called artistry and got second prize.</p>
+         <button class="cc-btn" onclick="openCert('pcert2.jpeg','')">
+          View Certificate <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <span class="ai-role">Participant</span>
+      </div>
+
+      <div class="act-item ci" style="--delay:.2s">
+        <div class="ai-num">03</div>
+        <div class="ai-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 class="ai-title">Cyber Security Workshop</h3>
+        <p class="ai-desc">Participated in an intensive workshop covering network security, threat analysis, and ethical hacking fundamentals alongside industry professionals.</p>
+         <button class="cc-btn" onclick="openCert('pcert3.jpeg','')">
+          View Certificate <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <span class="ai-role">Participant</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CONTACT ═══════ -->
+<section id="contact" class="section s-dark">
+  <div class="container">
+    <div class="sec-label ci"> Contact</div>
+    <h2 class="sc-title ci">Let's <em>Connect</em></h2>
+
+    <div class="contact-wrap">
+      <div class="contact-left ci">
+        <p class="contact-intro">
+          I'm actively looking for internship opportunities and entry-level roles in cyber security and software development. Feel free to reach out through any of the channels below.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:uhaneesh03@gmail.com" class="cl-row">
+            <div class="clr-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="clr-info">
+              <span class="clri-label">Email</span>
+              <span class="clri-val">uhaneesh03@gmail.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-right clr-arr"></i>
+          </a>
+          <a href="tel:7702608199" class="cl-row">
+            <div class="clr-icon clr-green"><i class="fa-solid fa-phone"></i></div>
+            <div class="clr-info">
+              <span class="clri-label">Phone</span>
+              <span class="clri-val">+91 7702608199</span>
+            </div>
+            <i class="fa-solid fa-arrow-right clr-arr"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/usirikayalahaneesh-1a588332b" target="_blank" rel="noopener" class="cl-row">
+            <div class="clr-icon clr-blue"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="clr-info">
+              <span class="clri-label">LinkedIn</span>
+              <span class="clri-val">usirikayalahaneesh</span>
+            </div>
+            <i class="fa-solid fa-arrow-right clr-arr"></i>
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="cl-row">
+            <div class="clr-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="clr-info">
+              <span class="clri-label">GitHub</span>
+              <span class="clri-val">github.com/haneesh</span>
+            </div>
+            <i class="fa-solid fa-arrow-right clr-arr"></i>
+          </a>
+          <a href="https://www.instagram.com/_honey_usirikayala_?igsh=MXVoaW56aGxkdG1tOQ==" target="_blank" rel="noopener" class="cl-row">
+            <div class="clr-icon clr-pink"><i class="fa-brands fa-instagram"></i></div>
+            <div class="clr-info">
+              <span class="clri-label">Instagram</span>
+              <span class="clri-val">@haneesh</span>
+            </div>
+            <i class="fa-solid fa-arrow-right clr-arr"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right ci">
+        <div class="contact-card">
+          <div class="crc-eyebrow">Current Status</div>
+          <div class="crc-status">
+            <span class="crc-dot"></span>
+            Available for Internships
+          </div>
+          <div class="crc-divider"></div>
+          <div class="crc-detail"><i class="fa-solid fa-location-dot"></i> Madanapalle, Andhra Pradesh</div>
+          <div class="crc-detail"><i class="fa-solid fa-building-columns"></i> MITS Madanapalle · 2024–2028</div>
+          <div class="crc-detail"><i class="fa-solid fa-shield-halved"></i> Cyber Security Specialization</div>
+          <div class="crc-detail"><i class="fa-solid fa-star"></i> CGPA 8.83 / 10</div>
+          <div class="crc-divider"></div>
+          <a href="haneesh resume.pdf" download class="btn-gold btn-full">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="fi-top">
+      <span class="fi-name">Usirikayala Haneesh</span>
+      <div class="fi-social">
+        <a href="https://www.linkedin.com/in/usirikayalahaneesh-1a588332b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:uhaneesh03@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="fi-line"></div>
+    <div class="fi-bottom">
+      <span class="fi-copy">&copy; <span id="yr"></span> Usirikayala Haneesh · All Rights Reserved</span>
+      <nav class="fi-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#hero" class="fi-top-btn" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- CERTIFICATE MODAL -->
+<div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Certificate viewer">
+  <div class="cm-backdrop" id="cmBackdrop"></div>
+  <div class="cm-box">
+    <div class="cm-header">
+      <h2 class="cm-title" id="cmTitle">Certificate</h2>
+      <button class="cm-close" id="cmClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cm-body">
+      <div class="cm-spinner" id="cmSpinner"><div class="cms-ring"></div></div>
+      <img class="cm-img" id="cmImg" src="" alt="Certificate"/>
+      <div class="cm-error" id="cmError">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p>Certificate not found. Place image in <code>certs/</code> folder.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
